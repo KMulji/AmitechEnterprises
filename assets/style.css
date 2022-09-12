@@ -1,0 +1,233 @@
+:root {
+  --grey:#2e2d2d;
+  --white: #ffffff;
+  --black: #000000;
+  --yellow:#f5d21f;
+}
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# Navbar Section
+--------------------------------------------------------------*/
+.navbar {
+  background: var(--grey) !important;
+  
+}
+.navbar .nav-link {
+  color: var(--white) !important;
+  justify-content: center !important;
+  font-family: 'Racing Sans One', cursive;
+}
+.navbar .nav-link:hover {
+  color: var(--yellow) !important;
+}
+.navbar-brand {
+  color: var(--white) !important;
+  font-family: 'Racing Sans One', cursive;
+}
+.navbar-brand:hover {
+  color: var(--yellow) !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.topbar {
+  background: var(--yellow);
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: var(--black);
+  padding: 0;
+}
+.topbar .contact-info i a,
+.topbar .contact-info i span {
+  padding-left: 5px;
+  color:var(--black);
+}
+
+@media (max-width: 575px) {
+  .topbar .contact-info i a,
+  .topbar .contact-info i span {
+    font-size: 13px;
+  }
+}
+
+.topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.topbar .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.topbar .social-links a {
+  color: var(--grey);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.topbar .social-links a:hover {
+  color: #fff;
+}
+/*--------------------------------------------------------------
+# Home Banner Section
+--------------------------------------------------------------*/
+.home-banner {
+    width: 100%;
+    position: relative;
+    background: var(--grey);
+    padding: 60px 0 0 0;
+  }
+  
+  
+  @media (min-width: 1365px) {
+    .home-banner {
+      background-attachment: fixed;
+    }
+  }
+  
+  .home-banner h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-family: 'Racing Sans One', cursive;
+  }
+  
+  .home-banner p {
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Racing Sans One', cursive;
+  }
+  
+  
+  @media (max-width: 640px) {
+    .home-banner h2 {
+      font-size: 36px;
+    }
+  
+  }
+  
+  .home-banner .icon-boxes {
+    padding-bottom: 60px;
+  }
+  
+  @media (min-width: 1200px) {
+    .home-banner .icon-boxes:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(50% + 20px);
+      background-color: #fff;
+    }
+  }
+  
+  .home-banner .icon-box {
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: var(--yellow);
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .home-banner .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: 'Racing Sans One', cursive;
+  }
+  
+  .home-banner .icon-box .title a {
+    color:var(--grey);
+    transition: 0.3s;
+    font-family: 'Racing Sans One', cursive;
+  }
+  
+  .home-banner .icon-box .icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 48px;
+    line-height: 1;
+    color: var(--grey)
+  }
+  
+  .home-banner .icon-box:hover {
+    background: var(--grey);
+  }
+  
+  .home-banner .icon-box:hover .title a,
+  .home-banner .icon-box:hover .icon {
+    color: #fff;
+  }
+  /*--------------------------------------------------------------
+# About Us Section
+--------------------------------------------------------------*/
+.about .card{
+  border: 2px solid var(--grey);
+}
+.about .card-body {
+  padding: 1em;
+
+}
+
+
+  /*--------------------------------------------------------------
+# Footer Section
+--------------------------------------------------------------*/
+  footer {
+    background-color: var(--grey);
+    padding: 2em;
+    margin-top:auto;
+  }
+  
+  .footer h5 {
+    font-family: 'Racing Sans One', cursive;
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .footer li {
+    color: var(--white);
+    list-style-type: none;
+    text-align: center;
+    padding: 0.2rem;
+    font-family: 'Racing Sans One', cursive;
+  
+  }
+  
+  .footer ul {
+    padding: 2rem;
+  }
+  
+  .footer p {
+    font-family: 'Racing Sans One', cursive;
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+  }
+  .footer hr {
+    width: 70%;
+    height: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--yellow);
+    border: 0 none;
+  }
+  
