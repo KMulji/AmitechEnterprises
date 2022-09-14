@@ -186,6 +186,50 @@
   padding: 1em;
 
 }
+.about h1,p{
+  color: var(--grey);
+  font-family: 'Racing Sans One', cursive;
+}
+/*--------------------------------------------------------------
+# certification Section
+--------------------------------------------------------------*/
+.certification {
+  padding: 40px 0;
+}
+
+.certification .swiper {
+  padding: 10px 0;
+}
+
+.certification .swiper-slide img {
+  transition: 0.3s;
+}
+
+.certification .swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.certification .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.certification .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.certification .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+.certification h2{
+  color: var(--grey);
+  font-family: 'Racing Sans One', cursive;
+  text-align: center;
+}
 
 
   /*--------------------------------------------------------------
