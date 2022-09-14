@@ -188,6 +188,7 @@
   font-family: 'Racing Sans One', cursive;
   color: var(--grey);
   text-align: center;
+  margin-top: 4rem;
 }
 .about p{
   color: var(--grey);
