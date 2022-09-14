@@ -46,7 +46,10 @@ function aos_init() {
       }
     }
   });
-
+  /**
+   * Initiate Pure Counter
+   */
+   new PureCounter();
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
@@ -100,4 +103,5 @@ function aos_init() {
       }
     }
   });
+  
 })
