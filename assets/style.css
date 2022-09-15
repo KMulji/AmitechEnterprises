@@ -16,6 +16,10 @@
   background: var(--grey) !important;
   
 }
+.navbar-nav > .active > a {
+  
+  color: var(--yellow) !important;
+}
 .navbar .nav-link {
   color: var(--white) !important;
   justify-content: center !important;
