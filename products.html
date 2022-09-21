@@ -2,4 +2,30 @@
 layout: default
 ---
 
-<h1>Products will be here</h1>
+<section id="#products" class="products m-5"data-aos="zoom-out" data-aos-delay="100">
+  <div class="product_banner">
+    <img
+      class="d-none d-sm-block w-100"
+      src="assets/img/product_banner.jpg"
+      alt=""
+    />
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      {% for product in site.products %}
+      <div class="col-lg-4">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <img src="{{product.image}}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <h5 class="card-text">Grade: {{product.grade}}</h5>
+            <div class="details text-center">
+              <button href="#" class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

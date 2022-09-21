@@ -472,7 +472,31 @@
     transform: rotate(360deg);
   }
 }
+ /*--------------------------------------------------------------
+# product Section
+--------------------------------------------------------------*/
+.products .card{
+  margin: 5% 0%;
+}
+.products .card{
+  
+  outline: 2px solid var(--grey);
+}
+/* .products .card img{
+  width: auto;
+  height: 388px;
+} */
 
+
+
+.products .card-body{
+  margin: 0% 0% 0% 3%;
+  padding: 6% 0%;
+}
+.products button{
+  color:var(--grey);
+  background-color: var(--yellow);
+}
 
   /*--------------------------------------------------------------
 # Footer Section
@@ -516,4 +540,3 @@
     background-color: var(--yellow);
     border: 0 none;
   }
-  
