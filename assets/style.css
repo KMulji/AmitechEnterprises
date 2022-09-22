@@ -1,8 +1,8 @@
 :root {
-  --grey:#2e2d2d;
+  --grey: #2e2d2d;
   --white: #ffffff;
   --black: #000000;
-  --yellow:#f5d21f;
+  --yellow: #f5d21f;
 }
 /* Smooth scroll behavior */
 :root {
@@ -14,23 +14,21 @@
 --------------------------------------------------------------*/
 .navbar {
   background: var(--grey) !important;
-  
 }
 .navbar-nav > .active > a {
-  
   color: var(--yellow) !important;
 }
 .navbar .nav-link {
   color: var(--white) !important;
   justify-content: center !important;
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
 .navbar .nav-link:hover {
   color: var(--yellow) !important;
 }
 .navbar-brand {
   color: var(--white) !important;
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
 .navbar-brand:hover {
   color: var(--yellow) !important;
@@ -49,8 +47,7 @@
 .topbar .contact-info i a,
 .topbar .contact-info i span {
   padding-left: 5px;
-  color:var(--black);
-  
+  color: var(--black);
 }
 
 @media (max-width: 575px) {
@@ -84,119 +81,116 @@
 # Home Banner Section
 --------------------------------------------------------------*/
 .home-banner {
-    width: 100%;
-    position: relative;
-    background: var(--grey);
-    padding: 60px 0 0 0;
+  width: 100%;
+  position: relative;
+  background: var(--grey);
+  padding: 60px 0 0 0;
+}
+
+@media (min-width: 1365px) {
+  .home-banner {
+    background-attachment: fixed;
   }
-  
-  
-  @media (min-width: 1365px) {
-    .home-banner {
-      background-attachment: fixed;
-    }
-  }
-  
+}
+
+.home-banner h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--white);
+  font-family: "Racing Sans One", cursive;
+}
+
+.home-banner p {
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: "Racing Sans One", cursive;
+}
+
+@media (max-width: 640px) {
   .home-banner h2 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: var(--white);
-    font-family: 'Racing Sans One', cursive;
+    font-size: 36px;
   }
-  
-  .home-banner p {
-    color: var(--white);
-    font-weight: 400;
-    margin-bottom: 30px;
-    font-family: 'Racing Sans One', cursive;
+}
+
+.home-banner .icon-boxes {
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .home-banner .icon-boxes:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(50% + 20px);
+    background-color: #fff;
   }
-  
-  
-  @media (max-width: 640px) {
-    .home-banner h2 {
-      font-size: 36px;
-    }
-  
-  }
-  
-  .home-banner .icon-boxes {
-    padding-bottom: 60px;
-  }
-  
-  @media (min-width: 1200px) {
-    .home-banner .icon-boxes:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: calc(50% + 20px);
-      background-color: #fff;
-    }
-  }
-  
-  .home-banner .icon-box {
-    padding: 60px 30px;
-    position: relative;
-    overflow: hidden;
-    background: var(--yellow);
-    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .home-banner .icon-box .title {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-family: 'Racing Sans One', cursive;
-  }
-  
-  .home-banner .icon-box .title a {
-    color:var(--grey);
-    transition: 0.3s;
-    font-family: 'Racing Sans One', cursive;
-  }
-  
-  .home-banner .icon-box .icon {
-    margin-bottom: 20px;
-    padding-top: 10px;
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-    font-size: 48px;
-    line-height: 1;
-    color: var(--grey)
-  }
-  
-  .home-banner .icon-box:hover {
-    background: var(--grey);
-  }
-  
-  .home-banner .icon-box:hover .title a,
-  .home-banner .icon-box:hover .icon {
-    color: #fff;
-  }
-  /*--------------------------------------------------------------
+}
+
+.home-banner .icon-box {
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  background: var(--yellow);
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.home-banner .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-family: "Racing Sans One", cursive;
+}
+
+.home-banner .icon-box .title a {
+  color: var(--grey);
+  transition: 0.3s;
+  font-family: "Racing Sans One", cursive;
+}
+
+.home-banner .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--grey);
+}
+
+.home-banner .icon-box:hover {
+  background: var(--grey);
+}
+
+.home-banner .icon-box:hover .title a,
+.home-banner .icon-box:hover .icon {
+  color: #fff;
+}
+/*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
 
-.about .image{
+.about .image {
   text-align: center;
 }
-.about h2{
-  font-family: 'Racing Sans One', cursive;
+.about h2 {
+  font-family: "Racing Sans One", cursive;
   color: var(--grey);
   text-align: center;
   margin-top: 4rem;
 }
-.about p{
+.about p {
   color: var(--grey);
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
 
 /*--------------------------------------------------------------
@@ -232,10 +226,10 @@
 
 .stats-counter .stats-item p {
   margin: 0;
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
   font-size: 14px;
 }
-.stats-counter img{
+.stats-counter img {
   width: 400px;
   height: 400px;
 }
@@ -274,9 +268,9 @@
 .certification .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
-.certification h2{
+.certification h2 {
   color: var(--grey);
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
   text-align: center;
 }
 /*--------------------------------------------------------------
@@ -289,13 +283,14 @@
   border-radius: 10px 0 0 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
-.contact p,h4{
+.contact p,
+h4 {
   color: var(--grey);
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
-.contact h2{
+.contact h2 {
   color: var(--grey);
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
   text-align: center;
   margin-top: 4rem;
 }
@@ -313,9 +308,8 @@
 }
 
 .contact .info-item i {
-
   font-size: 20px;
-  color:var(--black);
+  color: var(--black);
   float: left;
   width: 44px;
   height: 44px;
@@ -368,7 +362,7 @@
   font-weight: 600;
 }
 
-.contact .jekyll-form .error-message br+br {
+.contact .jekyll-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -408,14 +402,14 @@
   font-size: 14px;
 }
 
-.contact .jekyll-form input[type=text],
-.contact .jekyll-form input[type=email],
+.contact .jekyll-form input[type="text"],
+.contact .jekyll-form input[type="email"],
 .contact .jekyll-form textarea {
   padding: 12px 15px;
 }
 
-.contact .jekyll-form input[type=text]:focus,
-.contact .jekyll-form input[type=email]:focus,
+.contact .jekyll-form input[type="text"]:focus,
+.contact .jekyll-form input[type="email"]:focus,
 .contact .jekyll-form textarea:focus {
   border-color: var(--color-primary);
 }
@@ -424,34 +418,31 @@
   padding: 10px 12px;
 }
 
-.contact .jekyll-form button[type=submit] {
+.contact .jekyll-form button[type="submit"] {
   background: var(--color-primary);
   border: 0;
   padding: 14px 45px;
-  color:var(--white);
+  color: var(--white);
   background-color: var(--black);
   transition: 0.4s;
   border-radius: 50px;
-  font-family: 'Racing Sans One', cursive;
-  
+  font-family: "Racing Sans One", cursive;
 }
 .contact .form-control::-webkit-input-placeholder {
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
 
 .contact .form-control:-ms-input-placeholder {
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
 
 .contact .form-control:-moz-placeholder {
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
 
 .contact .form-control::-moz-placeholder {
-  font-family: 'Racing Sans One', cursive;
+  font-family: "Racing Sans One", cursive;
 }
-
-
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -472,23 +463,25 @@
     transform: rotate(360deg);
   }
 }
- /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # product Section
 --------------------------------------------------------------*/
-.products .card{
+
+.products .card img {
+  width: 90%;
+}
+.products .card {
   margin: 3% 0%;
 }
-.products .card{
-  
+.products .card {
   outline: 2px solid var(--grey);
 }
 
-
-.products h5{
-  font-family: 'Racing Sans One', cursive;
+.products h5 {
+  font-family: "Racing Sans One", cursive;
 }
 
-.products .card-body{
+.products .card-body {
   margin: 0% 0% 0% 3%;
   padding: 6% 0%;
 }
@@ -496,48 +489,51 @@
   .product-image {
     display: none !important;
   }
-  
+}
+@media screen and (min-width: 768px) {
+  .products .product-grid {
+    width: 90%;
+  }
 }
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Footer Section
 --------------------------------------------------------------*/
-  footer {
-    background-color: var(--grey);
-    padding: 2em;
-    margin-top:auto;
-  }
-  
-  .footer h5 {
-    font-family: 'Racing Sans One', cursive;
-    color: var(--white);
-    text-align: center;
-  }
-  
-  .footer li {
-    color: var(--white);
-    list-style-type: none;
-    text-align: center;
-    padding: 0.2rem;
-    font-family: 'Racing Sans One', cursive;
-  
-  }
-  
-  .footer ul {
-    padding: 2rem;
-  }
-  
-  .footer p {
-    font-family: 'Racing Sans One', cursive;
-    color: var(--white);
-    text-align: center;
-    padding: 2rem;
-  }
-  .footer hr {
-    width: 70%;
-    height: 0.3rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--yellow);
-    border: 0 none;
-  }
+footer {
+  background-color: var(--grey);
+  padding: 2em;
+  margin-top: auto;
+}
+
+.footer h5 {
+  font-family: "Racing Sans One", cursive;
+  color: var(--white);
+  text-align: center;
+}
+
+.footer li {
+  color: var(--white);
+  list-style-type: none;
+  text-align: center;
+  padding: 0.2rem;
+  font-family: "Racing Sans One", cursive;
+}
+
+.footer ul {
+  padding: 2rem;
+}
+
+.footer p {
+  font-family: "Racing Sans One", cursive;
+  color: var(--white);
+  text-align: center;
+  padding: 2rem;
+}
+.footer hr {
+  width: 70%;
+  height: 0.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--yellow);
+  border: 0 none;
+}

@@ -4,7 +4,7 @@ layout: default
 
 <section
   id="#products"
-  class="products m-5"
+  class="products m-md-5"
   data-aos="zoom-out"
   data-aos-delay="100"
 >
@@ -15,10 +15,43 @@ layout: default
       alt=""
     />
   </div>
+  <section id="certification" class="certification" data-aos="fade-up">
+    <h2>Our Product Certifications</h2>
+    <div class="container" data-aos="zoom-out">
+      <div class="certification-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide">
+            <img src="assets/img/por.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/bmw.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/mb.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/cat.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/ford.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/man.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/chry.png" class="img-fluid" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/ren.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="container-fluid product-grid">
     <div class="row">
       {% for product in site.products %}
-      <div class="col-md-4 d-flex align-items-stretch portfolio-item">
+      <div class="col-lg-4 d-flex align-items-stretch portfolio-item text-center">
         <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h5 class="card-title text-center">{{product.name}}</h5>
           <h5 class="card-text text-center">Grade: {{product.grade}}</h5>
@@ -32,7 +65,7 @@ layout: default
                 class="img-fluid"
                 alt=""
             /></a>
-            <div class="details text-center">
+            <div class="details">
               <button href="#" class="btn btn-warning">Details</button>
             </div>
           </div>
