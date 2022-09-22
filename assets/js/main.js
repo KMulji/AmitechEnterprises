@@ -11,6 +11,12 @@ function aos_init() {
   window.addEventListener('load', () => {
     aos_init();
   });
+  /**
+   * Initiate glightbox
+   */
+   const glightbox = GLightbox({
+    selector: '.glightbox'
+  });
  /**
    * Clients Slider
    */

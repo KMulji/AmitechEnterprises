@@ -10,7 +10,6 @@ layout: default
 >
   <div class="product_banner">
     <img
-      
       class="d-none d-sm-block w-100 product-image"
       src="assets/img/product_banner.jpg"
       alt=""
@@ -19,17 +18,20 @@ layout: default
   <div class="container-fluid product-grid">
     <div class="row">
       {% for product in site.products %}
-      <div class="col-md-4 d-flex align-items-stretch">
+      <div class="col-md-4 d-flex align-items-stretch portfolio-item">
         <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h5 class="card-title text-center">{{product.name}}</h5>
           <h5 class="card-text text-center">Grade: {{product.grade}}</h5>
           <div class="card-body">
-            <!-- <a src="{{product.image}}" data-toggle="lightbox">
-              <img   src="{{product.image}}" class="img-fluid" alt="..." />
-            </a> -->
-            <a href="{{product.image}}" data-toggle="lightbox" data-caption="This describes the image">
-              <img src="{{product.image}}" class="img-fluid">
-            </a>
+            <a
+              href="{{product.image}}"
+              data-gallery="portfolio-gallery-app"
+              class="glightbox"
+              ><img
+                src="{{product.image}}"
+                class="img-fluid"
+                alt=""
+            /></a>
             <div class="details text-center">
               <button href="#" class="btn btn-warning">Details</button>
             </div>
