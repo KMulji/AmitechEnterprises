@@ -482,20 +482,23 @@
   
   outline: 2px solid var(--grey);
 }
-/* .products .card img{
-  width: auto;
-  height: 388px;
-} */
+.products .product-grid{
+  width: 90%;
+}
 
-
+.products h5{
+  font-family: 'Racing Sans One', cursive;
+}
 
 .products .card-body{
   margin: 0% 0% 0% 3%;
   padding: 6% 0%;
 }
-.products button{
-  color:var(--grey);
-  background-color: var(--yellow);
+@media screen and (max-width: 768px) {
+  .product-image {
+    display: none !important;
+  }
+  
 }
 
   /*--------------------------------------------------------------

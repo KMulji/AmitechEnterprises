@@ -5,22 +5,24 @@ layout: default
 <section id="#products" class="products m-5"data-aos="zoom-out" data-aos-delay="100">
   <div class="product_banner">
     <img
-      class="d-none d-sm-block w-100"
+      class="d-none d-sm-block w-100 product-image"
       src="assets/img/product_banner.jpg"
       alt=""
     />
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid product-grid">
     <div class="row">
       {% for product in site.products %}
-      <div class="col-lg-4">
+      <div class="col-md-4 d-flex align-items-stretch">
+      
         <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <img src="{{product.image}}" class="card-img-top" alt="..." />
+          <h5 class="card-title text-center">{{product.name}}</h5>
+          <h5 class="card-text text-center">Grade: {{product.grade}}</h5>
           <div class="card-body">
-            <h5 class="card-title">{{product.name}}</h5>
-            <h5 class="card-text">Grade: {{product.grade}}</h5>
+            <img src="{{product.image}}" class="card-img-top" alt="..." />
+            
             <div class="details text-center">
-              <button href="#" class="btn btn-primary">Details</button>
+              <button href="#" class="btn btn-warning">Details</button>
             </div>
           </div>
         </div>
