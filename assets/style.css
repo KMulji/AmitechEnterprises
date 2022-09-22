@@ -482,9 +482,7 @@
   
   outline: 2px solid var(--grey);
 }
-.products .product-grid{
-  width: 90%;
-}
+
 
 .products h5{
   font-family: 'Racing Sans One', cursive;
