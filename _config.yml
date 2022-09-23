@@ -52,8 +52,8 @@ collections:
       output: true
       permalink: /AmitechEnterprises/products/:title/
       order:
-        - 5W40.md
+        - 10W40.md
         - 20W50.md
         - 5W30.md
-        - 10W40.md
+        - 5W40.md
         - coolant.md
