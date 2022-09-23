@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 
-#baseurl: /AmitechEnterprises # the subpath of your site, e.g. /blog
-#url: kmulji.github.io  # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /AmitechEnterprises # the subpath of your site, e.g. /blog
+url: kmulji.github.io  # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -50,7 +50,7 @@ plugins:
 collections:
   products:
       output: true
-      permalink: /AmitechEnterprises/products/:title/
+      permalink: /products/:title/
       order:
         - 5W40.md
         - 20W50.md
