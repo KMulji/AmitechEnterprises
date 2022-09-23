@@ -49,6 +49,7 @@ plugins:
 #   - vendor/ruby/
 collections:
   products:
+      permalink: /AmitechEnterprises/:collection/:title/
       output: true
       order:
         - 5w40.md
