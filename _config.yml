@@ -50,6 +50,7 @@ plugins:
 collections:
   products:
       output: true
+      permalink: /AmitechEnterprises/products/:title/
       order:
         - 5w40.md
         - 20W50.md
