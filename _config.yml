@@ -48,4 +48,11 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 collections:
-  - products
+  products:
+      output: true
+      order:
+        - 5w40.md
+        - 20W50.md
+        - 5W30.md
+        - 10W40.md
+        - coolant.md

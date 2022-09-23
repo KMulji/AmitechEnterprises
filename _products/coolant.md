@@ -1,4 +1,6 @@
 ---
+title: coolant
+layout: product
 name: Petrovöll KÜHLER COOLANT & ANTI FREEZE
 image: assets/img/coolant.jpg
 grade: COOLANT & ANTI FREEZE
