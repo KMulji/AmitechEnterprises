@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 
-baseurl: /AmitechEnterprises # the subpath of your site, e.g. /blog
-url: kmulji.github.io  # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: /AmitechEnterprises # the subpath of your site, e.g. /blog
+url: "www.amitechkenya.com"  # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
