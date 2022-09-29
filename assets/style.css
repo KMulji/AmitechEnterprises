@@ -773,3 +773,8 @@ footer {
   background-color: var(--yellow);
   border: 0 none;
 }
+.map {
+  text-align: center;
+  display: block;
+  
+}
