@@ -27,6 +27,7 @@ github_username:  jekyll
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -57,3 +58,8 @@ collections:
         - 5W30.md
         - 10W40.md
         - coolant.md
+
+title: Petrovoll Kenya
+tagline:  we have been appointed the sole distributors of Petrovoll Lubricants Germany. Our main focus is to provide excellent quality motor oil/engine oil to our customers at the best possible price.
+description: Amitech Automobiles LTD is a well-established company for over 30 years.We have been providing quality car security solutions and other products in the Kenyan market and have recently expanded our product range to supplying superior motor vehicle lubricants. Due to our strong history and presence in Kenya, we have been appointed the sole distributors of Petrovoll Lubricants Germany. Our main focus is to provide excellent quality products to our customers at the best possible price.
+url: www.amitechkenya.com
