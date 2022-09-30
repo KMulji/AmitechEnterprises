@@ -93,7 +93,7 @@
   }
 }
 
-.home-banner h2 {
+.home-banner h1,h2 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -268,7 +268,7 @@
 .certification .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
-.certification h2 {
+.certification h1 {
   color: var(--grey);
   font-family: "Racing Sans One", cursive;
   text-align: center;
@@ -477,7 +477,7 @@ h4 {
   outline: 2px solid var(--grey);
 }
 
-.products h5 {
+.products h5,h1 {
   font-family: "Racing Sans One", cursive;
 }
 
@@ -682,7 +682,7 @@ h4 {
   background-color: var(--grey);
 }
 
-.breadcrumbs .page-header h2 {
+.breadcrumbs .page-header h2,h1 {
   font-size: 56px;
   font-weight: 500;
   color: #fff;

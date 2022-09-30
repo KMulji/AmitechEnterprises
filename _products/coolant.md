@@ -1,5 +1,5 @@
 ---
-title: coolant
+title: Coolant Kenya
 layout: product
 name: Petrovöll KÜHLER COOLANT & ANTI FREEZE
 image: assets/img/coolant.jpg
