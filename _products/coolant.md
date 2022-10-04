@@ -1,5 +1,5 @@
 ---
-title: Petrovoll Kuhler Coolant & Antifreeze Kenya.
+title: Petrovoll Kuhler Coolant & Antifreeze Kenya
 layout: product
 name: Petrovöll KÜHLER COOLANT & ANTI FREEZE
 image: assets/img/coolant.jpg
