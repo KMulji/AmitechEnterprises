@@ -8,5 +8,7 @@ docs:
   - title: Contact Us
     url: /#contact  
   - title: Products
-    url: /products.html
-  
+    subfolderitems:
+      - title: STÄRK FULLY SYNTHETIC 5W40
+        url: /product/5W40/
+      - title: VÖLEX MULTI GRADE MINERAL SAE 20W50  

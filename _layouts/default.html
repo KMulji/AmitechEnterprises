@@ -115,6 +115,33 @@
         >
           <ul class="navbar-nav">
             {% for item in site.data.navigation.docs %}
+            {% if item.title =="Products" %}
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+                aria-labelledby="navbarDropdown"
+              >
+                {% for entry in item.subfolderitems %}
+                <li class="{% if entry.url == page.url %}active{% endif %}">
+                  <a class="dropdown-item" href="{{site.baseurl}}{{ entry.url }}"
+                    >{{ entry.title }}</a
+                  >
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endif %} {% if item.title != "Products" %}
             <li class="nav-item {% if item.url == page.url %}active{% endif %}">
               <a
                 class="nav-link active"
@@ -123,7 +150,7 @@
                 >{{ item.title }}</a
               >
             </li>
-            {% endfor %}
+            {% endif %}{% endfor %}
           </ul>
         </div>
       </div>
