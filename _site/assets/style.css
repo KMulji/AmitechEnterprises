@@ -83,7 +83,7 @@
 }
 
 .dropdown-menu {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 .dropdown-menu .dropdown-item{
   color: var(--white);
