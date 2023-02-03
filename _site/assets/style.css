@@ -77,6 +77,21 @@
 .topbar .social-links a:hover {
   color: #fff;
 }
+.dropdown-menu > .active > a {
+  background-color: var(--white);
+  color: var(--yellow);
+}
+
+.dropdown-menu {
+  background-color: var(--white);
+}
+.dropdown-menu .dropdown-item{
+  color: var(--white);
+}
+.dropdown-menu .dropdown-item:hover{
+  background-color: var(--yellow);
+  color: var(--white);
+}
 /*--------------------------------------------------------------
 # Home Banner Section
 --------------------------------------------------------------*/
