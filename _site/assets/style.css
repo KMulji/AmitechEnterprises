@@ -87,6 +87,7 @@
 }
 .inner .dropdown-menu .dropdown-item{
   color: var(--white) !important;
+  font-family: "Racing Sans One", cursive;
 }
 .inner .dropdown-menu .dropdown-item:hover{
   background-color: var(--black)!important;
