@@ -77,22 +77,11 @@
 .topbar .social-links a:hover {
   color: #fff;
 }
-.inner .dropdown-menu > .active > a {
-  background-color: var(--black)!important;
-  color: var(--yellow)!important;
+
+.navbar > .navbar-nav > .active > a{
+  color: var(--yellow) !important;
 }
 
-.inner .dropdown-menu {
-  background-color: var(--white) !important;
-}
-.inner .dropdown-menu .dropdown-item{
-  color: var(--white) !important;
-  font-family: "Racing Sans One", cursive;
-}
-.inner .dropdown-menu .dropdown-item:hover{
-  background-color: var(--black)!important;
-  color: var(--yellow)!important;
-}
 /*--------------------------------------------------------------
 # Home Banner Section
 --------------------------------------------------------------*/
