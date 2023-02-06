@@ -77,7 +77,7 @@
 .topbar .social-links a:hover {
   color: #fff;
 }
-.navbar > .navbar-nav > .dropdown-menu > .active2 > li{
+.navbar > .navbar-nav > .dropdown-menu > .active2 > a{
   color: #000000;
 }
 
