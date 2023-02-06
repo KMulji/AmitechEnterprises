@@ -78,7 +78,8 @@
   color: #fff;
 }
 
-.navbar > .navbar-nav > .inner > li > .active > a{
+.navbar > .navbar-nav > .inner > .active > li{
+  background-color: var(--black);
   color: var(--yellow) !important;
 }
 
