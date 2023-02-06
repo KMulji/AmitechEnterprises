@@ -133,6 +133,9 @@
                 aria-labelledby="navbarDropdown"
               >
                 {% for entry in item.subfolderitems %}
+                <script>
+                  console.log("{{entry.url}},{{page.url}}");
+                </script>
                 <li class="{% if entry.url == page.url %}active{% endif %}">
                   <a class="dropdown-item" href="{{ entry.url }}"
                     >{{ entry.title }}</a
