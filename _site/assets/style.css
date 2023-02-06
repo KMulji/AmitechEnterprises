@@ -79,7 +79,7 @@
 }
 
 .navbar > .navbar-nav > .inner > .active > li{
-  background-color: var(--black);
+  background: var(--black);
   color: var(--yellow) !important;
 }
 
