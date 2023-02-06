@@ -79,18 +79,18 @@
 }
 .dropdown-menu > .active > a {
   background-color: var(--black);
-  color: var(--white);
+  color: var(--yellow);
 }
 
 .dropdown-menu {
-  background-color: var(--red);
+  background-color: var(--white) !important;
 }
 .dropdown-menu .dropdown-item{
-  color: var(--white);
+  color: var(--white) !important;
 }
 .dropdown-menu .dropdown-item:hover{
-  background-color: var(--white);
-  color: var(--red);
+  background-color: var(--black);
+  color: var(--yellow)!important;
 }
 /*--------------------------------------------------------------
 # Home Banner Section
