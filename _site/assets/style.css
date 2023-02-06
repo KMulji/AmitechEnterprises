@@ -78,10 +78,7 @@
   color: #fff;
 }
 
-.navbar > .navbar-nav > .inner > .active > li{
-  background: var(--black);
-  color: var(--yellow) !important;
-}
+
 
 /*--------------------------------------------------------------
 # Home Banner Section
