@@ -134,7 +134,7 @@
               >
                 {% for entry in item.subfolderitems %}
                 <li class="{% if entry.url == page.url %}active{% endif %}">
-                  <a class="dropdown-item" href="{{site.baseurl}}{{ entry.url }}"
+                  <a class="dropdown-item" href="{{site.url}}{{ entry.url }}"
                     >{{ entry.title }}</a
                   >
                 </li>
@@ -147,7 +147,7 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="{{site.baseurl}}{{ item.url }}"
+                href="{{site.url}}{{ item.url }}"
                 >{{ item.title }}</a
               >
             </li>
@@ -205,7 +205,7 @@
               <li>☎️: +254-794-590-459</li>
               <li>🏡: Amitech Automobiles, Next to Kingsway Tyres University Way, Nairobi</li>
 
-              <li>© 2022,<a href="https://github.com/KMulji">Kyan Mulji</a></li>
+              <li>© 2023,<a href="https://github.com/KMulji">Kyan Mulji</a></li>
             </ul>
           </div>
         </div>
