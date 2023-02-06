@@ -78,7 +78,7 @@
   color: #fff;
 }
 
-.navbar > .navbar-nav > .inner > .active > a{
+.navbar > .navbar-nav > .inner > li > .active > a{
   color: var(--yellow) !important;
 }
 
