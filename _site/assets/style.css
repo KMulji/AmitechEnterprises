@@ -77,18 +77,18 @@
 .topbar .social-links a:hover {
   color: #fff;
 }
-.navbar .navbar-nav .inner .dropdown-menu > .active > a {
+.inner .dropdown-menu > .active > a {
   background-color: var(--black)!important;
   color: var(--yellow)!important;
 }
 
-.navbar .navbar-nav .inner .dropdown-menu {
+.inner .dropdown-menu {
   background-color: var(--white) !important;
 }
-.navbar .navbar-nav .inner .dropdown-menu .dropdown-item{
+.inner .dropdown-menu .dropdown-item{
   color: var(--white) !important;
 }
-.navbar .navbar-nav .inner .dropdown-menu .dropdown-item:hover{
+.inner .dropdown-menu .dropdown-item:hover{
   background-color: var(--black)!important;
   color: var(--yellow)!important;
 }
