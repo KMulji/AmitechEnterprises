@@ -141,7 +141,8 @@
                 {% endfor %}
               </ul>
             </li>
-            {% endif %} {% if item.title != "Products" %}
+            {% endif %} 
+            {% if item.title != "Products" %}
             <li class="nav-item {% if item.url == page.url %}active{% endif %}">
               <a
                 class="nav-link active"
