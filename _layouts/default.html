@@ -136,7 +136,7 @@
                 <script>
                   console.log("{{entry.url}},{{page.url}}");
                 </script>
-                <li class="{% if entry.url == page.url %}active2{% endif %}">
+                <li class="{% if entry.url == page.url %}hidden{% endif %}">
                   <a class="dropdown-item" href="{{ entry.url }}"
                     >{{ entry.title }}</a
                   >
