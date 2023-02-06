@@ -10,7 +10,7 @@ docs:
   - title: Products
     subfolderitems:
       - title: All Products
-        url: https://amitechkenya.com/products.html
+        url: /products.html
       - title: STÄRK FULLY SYNTHETIC 5W40
         url: /products/5W40/
       - title: VÖLEX MULTI GRADE MINERAL SAE 20W50  
