@@ -126,12 +126,12 @@
         };
 
         (function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
+          var js, fjs = d.getElementsByTagName(s)[2];
           if (d.getElementById(id)) return;
           js = d.createElement(s); js.id = id;
           js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
           fjs.parentNode.appendChild(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+        }(document, 'div', 'facebook-jssdk'));
       </script>
     </div>
     <div class="sub-button shadow">
