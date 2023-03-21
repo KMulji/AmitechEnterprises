@@ -126,11 +126,11 @@
         };
 
         (function (d, s, id) {
-          var js, fjs = d.getElementsByClassName(s)[0];
+          var js, fjs = d.getElementsByClassName(s)[1];
           if (d.getElementById(id)) return;
           js = d.createElement(s); js.id = id;
           js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.appendChild(js, fjs);
+          fjs.insertBefore(js, fjs);
         }(document, 'sub-button', 'facebook-jssdk'));
       </script>
     </div>
