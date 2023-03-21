@@ -118,14 +118,14 @@
     };
 
     (function (d, s, id) {
-      var js, fjs = d.getElementsByClassName(s)[0];
+      var js, fjs = d.getElementsByTagNames(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement("div"); js.id = id;
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.append(js, fjs);
+      fjs.parentNode.insertBefore(js, fjs);
     }(document, 'sub-button', 'facebook-jssdk'));
   </script>
-  <div class="fab-container">
+  <!-- <div class="fab-container">
     <div class="fab shadow">
       <div class="fab-content">
         
@@ -138,7 +138,7 @@
       <a class="bi bi-whatsapp" href="https://wa.me/1XXXXXXXXXX"></a>
     </div>
 
-  </div>
+  </div> -->
   <footer class="footer mt-5">
     <div>
       <div class="row ml-3">
