@@ -127,7 +127,7 @@
                 console.log("/products/20W50/,/404.html");
               </script>
               <li class="">
-                <a class="dropdown-item" href="/products/20W50/">VÖLEX MULTI GRADE MINERAL SAE 20W50</a>
+                <a class="dropdown-item" href="/products/20W50/">VÖLEX MULTI GRADE MINERAL SAE 15W40</a>
               </li>
               
               <script>
@@ -142,6 +142,13 @@
               </script>
               <li class="">
                 <a class="dropdown-item" href="/products/10W40/">STÄRK SEMI SYNTHETIC 10W40</a>
+              </li>
+              
+              <script>
+                console.log("/products/15W40D/,/404.html");
+              </script>
+              <li class="">
+                <a class="dropdown-item" href="/products/15W40D/">VIRÖ-TEC HEAVY DUTY MINERAL DIESEL ENGINE OIL SAE 15W40</a>
               </li>
               
               <script>
@@ -180,50 +187,50 @@
   <p>The requested page could not be found.</p>
 </div>
 
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
 
-  <div class="fab-container">
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "112036113633874");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v16.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- <div class="fab-container">
     <div class="fab shadow">
       <div class="fab-content">
         
       </div>
     </div>
     <div class="sub-button shadow">
-      <!-- Messenger Chat plugin Code -->
-      <div id="fb-root"></div>
-
-      <!-- Your Chat plugin code -->
-      <div id="fb-customer-chat" class="fb-customerchat">
-      </div>
-
-      <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "112036113633874");
-        chatbox.setAttribute("attribution", "biz_inbox");
-      </script>
-
-      <!-- Your SDK code -->
-      <script>
-        window.fbAsyncInit = function () {
-          FB.init({
-            xfbml: true,
-            version: 'v16.0'
-          });
-        };
-
-        (function (d, s, id) {
-          var js, fjs = d.getElementsByClassName("sub-button");
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script>
+      
     </div>
     <div class="sub-button shadow">
       <a class="bi bi-whatsapp" href="https://wa.me/1XXXXXXXXXX"></a>
     </div>
 
-  </div>
+  </div> -->
   <footer class="footer mt-5">
     <div>
       <div class="row ml-3">

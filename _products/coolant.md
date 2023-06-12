@@ -2,8 +2,8 @@
 title: Petrovoll Kuhler Coolant & Antifreeze Kenya
 layout: product
 name: Petrovöll KÜHLER COOLANT & ANTI FREEZE
-image: assets/img/coolant.jpg
-image2: ../../assets/img/coolant.jpg
+image: ../../assets/img/Coolant.jpg
+image2: ../../assets/img/Coolant.jpg
 grade: COOLANT & ANTI FREEZE
 sizes: 4L
 description: Kenya Quality Petrovoll Red and Green coolant.
