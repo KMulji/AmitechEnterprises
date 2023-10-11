@@ -8,7 +8,10 @@ layout: default
       <div class="row d-flex justify-content-center">
         <div class="col-lg-6 text-center">
           <h1>{{page.name}} {{page.grade}}</h1>
-          <h2>{% if page.title == "Petrovoll Kuhler Coolant & Antifreeze Kenya" %}{%elsif page.title == "Petrovoll Dexo Multi ATF"%}{%else%} API {{page.base_api}}{% endif %}</h2>
+          <h2>{% if page.title == "Petrovoll Kuhler Coolant & Antifreeze Kenya" %}
+            {%elsif page.title == "Petrovoll Dexo Multi ATF"%}
+            {%elsif page.title == "Petrovoll Dexo Multi CVTF"%}
+            {%else%} API {{page.base_api}}{% endif %}</h2>
         </div>
       </div>
     </div>
@@ -19,7 +22,8 @@ layout: default
         <li><a href="../../products.html">Products</a></li>
         <li>{% if page.title == "Petrovoll Kuhler Coolant & Antifreeze Kenya" %}{{page.name}} {{page.grade}}
           {%elsif page.title == "Petrovoll Dexo Multi ATF" %}{{page.name}} {{page.grade}}
-           {%else%}{{page.name}} {{page.grade}} API {{page.base_api}}{%endif%}
+          {%elsif page.title == "Petrovoll Dexo Multi CVTF"%}{{page.name}} {{page.grade}}
+          {%else%}{{page.name}} {{page.grade}} API {{page.base_api}}{%endif%}
         </li>
 
       </ol>
