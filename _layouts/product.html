@@ -3,32 +3,36 @@ layout: default
 ---
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
-    <div class="page-header d-flex align-items-center" style="background-image: url('');">
-      <div class="container position-relative">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h1>{{page.name}} {{page.grade}}</h1>
-            <h2>{% if page.title != "Petrovoll Kuhler Coolant & Antifreeze Kenya" %}API:{{page.base_api}}{% endif %}</h2>
-          </div>
+  <div class="page-header d-flex align-items-center" style="background-image: url('');">
+    <div class="container position-relative">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h1>{{page.name}} {{page.grade}}</h1>
+          <h2>{% if page.title == "Petrovoll Kuhler Coolant & Antifreeze Kenya" %}{%elsif page.title == "Petrovoll Dexo Multi ATF"%}{%else%} API {{page.base_api}}{% endif %}</h2>
         </div>
       </div>
     </div>
-    <nav>
-      <div class="container">
-        <ol>
-          <li><a href="../../products.html">Products</a></li>
-          <li>{% if page.title != "Petrovoll Kuhler Coolant & Antifreeze Kenya" %}{{page.name}} {{page.grade}} API {{page.base_api}}{%else%}{{page.name}}{%endif%}</li>
-        </ol>
-      </div>
-    </nav>
-  </div><!-- End Breadcrumbs -->
+  </div>
+  <nav>
+    <div class="container">
+      <ol>
+        <li><a href="../../products.html">Products</a></li>
+        <li>{% if page.title == "Petrovoll Kuhler Coolant & Antifreeze Kenya" %}{{page.name}} {{page.grade}}
+          {%elsif page.title == "Petrovoll Dexo Multi ATF" %}{{page.name}} {{page.grade}}
+           {%else%}{{page.name}} {{page.grade}} API {{page.base_api}}{%endif%}
+        </li>
+
+      </ol>
+    </div>
+  </nav>
+</div><!-- End Breadcrumbs -->
 
 <!-- ======= Portfolio Details Section ======= -->
 <section id="portfolio-details" class="portfolio-details">
-    
+
   <div class="container" data-aos="fade-up">
     <div class="position-relative h-100">
-        
+
       <div class="slides-1 portfolio-details-slider swiper">
         <div class="swiper-wrapper align-items-center">
           <div class="swiper-slide">
@@ -44,7 +48,7 @@ layout: default
     <div class="row justify-content-between gy-4 mt-4">
       <div class="col-lg-8">
         <div class="portfolio-description">
-          
+
           <p>{{page.product_description}}</p>
           <ul>
             {% for item in page.benefits %}
@@ -56,12 +60,147 @@ layout: default
 
       <div class="col-lg-3">
         <div class="portfolio-info">
+        
+          {% if page.title == "Petrovoll Dexo Multi ATF" %}
+          <ul>
+            <li><strong>Size </strong> <span>{{page.sizes}}</span></li>
+            <li>
+              <strong>Performance </strong> <span></span>
+            </li>
+            <li>
+              <strong>AUDI </strong> <span>G 052 025, G 052 162, G 052 533, G 052
+                990, G 055 005, G 055 025, Tip-tronic</span>
+            </li>
+            <li>
+              <strong>BMW </strong> <span>81 22 9 400 272, 83 22 0 026 922, 83 22 0
+                142 516, 83 22 0 402 413, 83 22 2 305 396
+                (ATF2), 83 22 9 407 765, 83 22 9
+                407 807, ATF2, ETL 7045E, ETL 8072B,
+                LA2634, LT 71141</span>
+            </li>
+            <li>
+              <strong>Honda </strong> <span> ATF-Z1(except CVTs),ATF DW-1 (except
+                CVTs), Honda ATF Ultra II, ATF-11</span>
+            </li>
+            <li>
+              <strong>Lexus </strong> <span>ATF Type T-IV, ATF WS, JWS 3324, NWS
+                9638</span>
+            </li>
+            <li>
+              <strong>Mazda</strong> <span> 6-sp AT, ATF D-II, ATF F-1, ATF M-III, ATF
+                M-V, JWS 3317,MERCON LV,ATF FZ, ATF
+                S-1, ATF N-1</span>
+            </li>
+            <li>
+              <strong>Mercedes Benz </strong> <span> A 001 989 22 03, MB 236.1, MB 236.10, MB
+                236.11, MB 236.12, MB 236.3, MB 236.5, MB
+                236.7, MB 236.9</span>
+            </li>
+            <li>
+              <strong>Mitsubishi </strong> <span>ATF-J2, ATF-J3, ATF-PA, AYC Fluid, SP II,
+                SP III, ATF SP-IV,PSF-3, AW, SK</span>
+            </li>
+            <li>
+              <strong>Nissan </strong> <span>ATF D3M, ATF FMS, MATIC C, MATIC D,
+                MATIC J, MATIC K, MATIC
+                S, MATIC W,MATIC P, PSF-I</span>
+            </li>
+            <li>
+              <strong>Subaru </strong> <span>ATF HP, ATF 5AT, ATF WS</span>
+            </li>
+            <li>
+              <strong>Suzuki </strong> <span>ATF 3314, ATF 3317, Matic S</span>
+            </li>
+            <li>
+              <strong>Toyota </strong> <span>ATF Type T-IV, ATF WS, JWS
+                2312D, JWS 3309, JWS 3324, LF</span>
+            </li>
+            <li>
+              <strong>VW </strong> <span> G 052 025, G 052 162, G 052 533, G 052
+                990, G 055 005, G 055 025, TL 52 162, VW
+                5HP(19FL,24A)</span>
+            </li>
+            <li><strong>ZF </strong> <span>Lifeguard 5, 6,6 Plus, 8, 9, ZF 3 & 4 Speed
+                Transmission.</span></li>
+            <li>
+          </ul>
+          {%elsif page.title == "Petrovoll Dexo Multi CVTF"%}
+          
           <ul>
             <li><strong>Size </strong> <span>{{page.sizes}}</span></li>
             <li>
               <strong>Performance </strong> <span>{{page.performance}}</span>
             </li>
+            <li>
+              <strong>Audi </strong> <span>G 052 180, G 052 516, Multitronic, TL 52
+
+                116,TL 52 180,TL 52 516.</span>
+            </li>
+            <li>
+              <strong>BMW </strong> <span>83 22 0 136 376, 83 22 0 429 154, EZL 799,
+                EZL 799 A.</span>
+            </li>
+            <li>
+              <strong>Honda </strong> <span>HMMF, CVT-F, HCF-2,Z1, Genuine CVT Fluid</span>
+            </li>
+            <li>
+              <strong>Hyundau </strong> <span>CVT-1, Genuine CVTF,SP-CVT 1, SP III(CVT
+
+                ONLY)</span>
+            </li>
+            <li>
+              <strong>Lexus </strong> <span>CVT FE, Fluid FE, Fluid TC, CVTF 3320</span>
+            </li>
+            <li>
+              <strong>Mazda </strong> <span>CVTF 3320, JWS 3320</span>
+            </li>
+            <li>
+              <strong>Mercedes Benz </strong> <span>A 001 989 46 03, MB 236.20</span>
+            </li>
+            <li>
+              <strong>Mitsubishi </strong> <span>CVTF-J1, CVTF-J4, MZ313973,SP III,
+
+                CVTF-J4+.</span>
+            </li>
+            <li>
+              <strong>Mopar Parts </strong> <span>CVTF+4, CVTF Plus 4</span>
+            </li>
+            <li>
+              <strong>Nissan </strong> <span>NS-1,NS-2,NS-2V,NS-3,,999MP-NS200P,
+
+                N-CVT</span>
+            </li>
+            <li>
+              <strong>Subaru </strong> <span>CV30, CVT III Fluid, CVT TR580, CVT
+                TR690, ECVT, High Torque CVT, High Torque
+                CVTF-LV, iCVTF, i-CVTFFG, K0421Y0700,
+                
+                K0425Y0710, K0425Y0711, Linear-
+                tronic chain CVT 3 Fluid, Lineartronic chain
+                
+                CVT and CVT II Fluid, Lineartronic CVTF,
+                Lineartronic High Torque (HT)CVT Fluid,
+                Lineartronic II, NS-2, SOA748V0300</span>
+            </li>
+            <li>
+              <strong>Suzuki </strong> <span>CVTF 3320,TC,NS-2,CVT GREEN 1,CVT
+                Green 1V,CVT GREEN 2, CVTF 4401.</span>
+            </li>
+            <li>
+              <strong>Toyota </strong> <span>TC,CVTF 3320,CVTF FE</span>
+            </li>
+            <li>
+              <strong>VW </strong> <span>G 052 180, G 052 516</span>
+            </li>          
           </ul>
+          {%else%}
+          <ul>
+            <li><strong>Sizes </strong> <span>{{page.sizes}}</span></li>
+            <li>
+              <strong>Performance </strong> <span>{{page.performance}}</span>
+            </li>
+          </ul>
+          {%endif%}
         </div>
       </div>
     </div>
